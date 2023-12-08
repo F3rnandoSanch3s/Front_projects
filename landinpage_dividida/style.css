@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --esquerda-bg-color: rgba(87, 84, 236, 0.7);
+    --direita-bg-color: rgba(43, 43, 43, 0.8);
+    --esquerda-btn-hover-color: rgb(219, 7, 7);
+    --direita-btn-hover-color: rgb(220, 217, 14);
+    --hover-width: 75%;
+    --other-width: 25%;
+    --speed: 1000ms;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 4rem;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+  }
+  
+  .btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    color: #fff;
+    border: #fff solid 0.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 15rem;
+    padding: 1.5rem;
+  }
+  
+  .lado.esquerda .btn:hover {
+    background-color: var(--esquerda-btn-hover-color);
+    border-color: var(--esquerda-btn-hover-color);
+  }
+  
+  .lado.direita .btn:hover {
+    background-color: var(--direita-btn-hover-color);
+    border-color: var(--direita-btn-hover-color);
+  }
+  
+  .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #333;
+  }
+  
+  .lado {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .lado.esquerda {
+    left: 0;
+    background: url('./imagens/nescau.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .lado.esquerda::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--esquerda-bg-color);
+  }
+  
+  .lado.direita{
+    right: 0;
+    background: url('./imagens/toddy.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .lado.direita::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--direita-bg-color);
+  }
+  
+  .lado.direita,
+  .lado.esquerda,
+  .lado.direita::before,
+  .lado.esquerda::before {
+    transition: all var(--speed) ease-in-out;
+  }
+  
+  .hover-esquerda .esquerda {
+    width: var(--hover-width);
+  }
+  
+  .hover-esquerda .direita {
+    width: var(--other-width);
+  }
+  
+  .hover-direita .direita {
+    width: var(--hover-width);
+  }
+  
+  .hover-direita .esquerda {
+    width: var(--other-width);
+  }
+  
+  @media (max-width: 800px) {
+    h1 {
+      font-size: 2rem;
+      top: 30%;
+    }
+  
+    .btn {
+      padding: 1.2rem;
+      width: 12rem;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
