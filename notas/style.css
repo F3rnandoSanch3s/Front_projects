@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #7bdaf3;
+  background-color:rgb(21, 21, 21);
   font-family: 'Poppins', sans-serif;
   display: flex;
   flex-wrap: wrap;
@@ -18,10 +18,10 @@ body {
   position: fixed;
   top: 1rem;
   right: 1rem;
-  background-color: #9ec862;
+  background-color: transparent;
+  border: 2px solid #fff;
   color: #fff;
-  border: none;
-  border-radius: 3px;
+  border-radius: 20px;
   padding: 0.5rem 1rem;
   cursor: pointer;
 }
@@ -37,10 +37,15 @@ body {
   height: 400px;
   width: 400px;
   overflow-y: scroll;
+  border-radius: 40px 0px;
 }
 
 .note .tools {
-  background-color: #9ec862;
+  background: rgb(131,58,180);
+  background: linear-gradient(90deg,
+   rgba(131,58,180,1) 0%,
+    rgba(253,29,29,1) 50%,
+     rgba(252,176,69,1) 100%);
   display: flex;
   justify-content: flex-end;
   padding: 0.5rem;
