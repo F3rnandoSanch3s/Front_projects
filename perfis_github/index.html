@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Perfis GitHub</title>
+  </head>
+  <body>
+    <header class="titulo">
+        <h1>Pesquise Perfis do GitHub aqui!</h1>
+    </header>
+    <form class="form-usuario" id="form">
+      <input type="text" id="pesquisa" placeholder="pesquise um usuario...">
+    </form>
+
+    <main id="main">
+        <div class="cartao">
+            <div>
+                <img src="https://randomuser.me/api/portraits/men/30.jpg" alt="" class="avatar">
+            </div>
+            <div class="info-usuario">
+                <h2>Fernando</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto optio quibusdam perspiciatis eos iste non impedit sed voluptates architecto eaque quod omnis dicta nisi commodi excepturi magni consequatur, autem maiores?</p>
+                <ul>
+                    <li>300 <strong>Followers</strong></li>
+                    <li>100 <strong>Following</strong></li>
+                    <li>30 <strong>Repos</strong></li>
+                </ul>
+                <div id="repos">
+                    <a href="#" class="repos">Repo 1</a>
+                    <a href="#" class="repos">Repo 2</a>
+                    <a href="#" class="repos">Repo 3</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js" integrity="sha512-DZqqY3PiOvTP9HkjIWgjO6ouCbq+dxqWoJZ/Q+zPYNHmlnI2dQnbJ5bxAHpAMw+LXRm4D72EIRXzvcHQtE8/VQ==" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
