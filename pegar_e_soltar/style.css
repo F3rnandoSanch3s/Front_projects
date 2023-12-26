@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(19, 19, 19);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.vazio{
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    border: solid 1px black;
+    background-color: rgb(39, 39, 39);
+}
+
+.cheio {
+    background-image: url('imagens/grama.jpg');
+    height: 145px;
+    width: 145px;
+    cursor: pointer;
+}
+
+.segurar{
+    border: solid 5px #ccc;
+}
+
+.pairado{
+    background-color: #333;
+    border-color: white;
+    border-style: dashed;
+}
+
+@media(max-width: 800px){
+    body{
+        flex-direction: column;
+    }
+}
