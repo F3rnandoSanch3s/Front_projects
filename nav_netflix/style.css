@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.texto {
+  text-transform: uppercase;
+}
+
+.logo {
+  width: 200px;
+}
+
+.botao_navegacao {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.botao_abrir {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+.navegacao {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.navegacao.visible {
+  transform: translateX(0);
+}
+
+.navegacao_preto {
+  background-color: rgb(34, 31, 31);
+  width: 60%;
+  max-width: 480px;
+  min-width: 320px;
+  transition-delay: 0.4s;
+}
+
+.navegacao_preto.visible {
+  transition-delay: 0s;
+}
+
+.navegacao_vermelho {
+  background-color: rgb(229, 9, 20);
+  width: 95%;
+  transition-delay: 0.2s;
+}
+
+.navegacao_vermelho.visible {
+  transition-delay: 0.2s;
+}
+
+.navegacao_branco {
+  background-color: #fff;
+  width: 95%;
+  padding: 40px;
+  position: relative;
+  transition-delay: 0s;
+}
+
+.navegacao_branco.visible {
+  transition-delay: 0.4s;
+}
+
+.botao_fechar {
+  opacity: 0.3;
+  position: absolute;
+  top: 40px;
+  right: 30px;
+}
+
+.lista {
+  list-style-type: none;
+  padding: 0;
+}
+
+.lista li {
+  margin: 20px 0;
+}
+
+.lista li a {
+  color: rgb(34, 31, 31);
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.lista ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
